@@ -3,7 +3,8 @@ import os
 import cv2
 import numpy as np
 
-os.mkdir("photos")
+if not os.path.exists("photos"):
+    os.mkdir("photos")
 os.chdir("photos")
 
 def faceReceg():
